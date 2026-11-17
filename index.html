@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="Kemo Store — أزياء شتوية للبنات والشباب والأطفال. اختيارات دافئة بعناية لكل العيلة.">
+  <title>Kemo Store — أزياء شتوية لكل العيلة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">شحن ثابت ٥٠ جنيه لكل المحافظات <span>—</span> التوصيل خلال يومين</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+        <a href="#collections">المجموعات</a>
+        <a href="#products">الأكثر طلباً</a>
+        <a href="#story">حكاية Kemo Store</a>
+      </nav>
+      <a class="brand" href="#" aria-label="Kemo Store، الصفحة الرئيسية"><strong>Kemo Store</strong><small>WINTER COLLECTION</small></a>
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" aria-label="البحث">
+          <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+        <button class="icon-button" id="cartToggle" aria-label="سلة التسوق">
+          <svg viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="bag-count" id="bagCount">0</span>
+        </button>
+      </div>
+    </div>
+    <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="دوري على القطعة اللي بتحبيها..." aria-label="ابحثي عن منتج"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">دفا وأناقة لكل العيلة</div>
+        <h1>أناقة شتوية،<br>لكل <em>العيلة.</em></h1>
+        <p>اختيارات شتوية للبنات والشباب والأطفال، بخامات مريحة وتفاصيل تفرق. شوفوا القطعة المناسبة ليكم مع Kemo Store.</p>
+        <div class="hero-cta">
+          <a class="button" href="#products">اكتشف المجموعة <svg viewBox="0 0 24 24"><path d="M19 12H5m7 7-7-7 7-7"/></svg></a>
+          <a class="text-link" href="#collections">تسوق حسب الفئة <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="images/صور بنات/3.png" alt="بالطو شتوي من مجموعة Kemo Store">
+        <div class="hero-note"><span>اختيارات الشتاء</span><strong>Winter edit</strong></div>
+        <span class="hero-index">01 — 03</span>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="مميزات Kemo Store">
+      <div class="benefit"><svg viewBox="0 0 24 24"><path d="M3 7h11v11H3zM14 11h4l3 3v4h-7z"/><circle cx="7.5" cy="19" r="1.7"/><circle cx="18" cy="19" r="1.7"/></svg><span>شحن ثابت ٥٠ جنيه</span></div>
+      <div class="benefit"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.2 9a6.5 6.5 0 0 1 11-2L20 12M4 12l2.8 5a6.5 6.5 0 0 0 11-2"/></svg><span>التوصيل خلال يومين</span></div>
+      <div class="benefit"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18m-14 5h4"/></svg><span>دفع آمن عند الاستلام</span></div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="section-head">
+        <div><div class="eyebrow">تسوق حسب الفئة</div><h2>اختيارات شتوية لكل العيلة</h2></div>
+        <p>اختاروا من تشكيلتنا الشتوية للبنات والشباب والأطفال، ولاقوا القطعة المناسبة ليكم.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#products" data-audience-link="women">
+          <img src="images/صور بنات/3.png" alt="ملابس شتوية للبنات">
+          <div class="category-content"><span>دفا وأناقة في كل إطلالة</span><h3>ملابس بناتي</h3><span class="text-link">تسوقي المجموعة <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+        </a>
+        <a class="category-card" href="#products" data-audience-link="men">
+          <img src="images/صور شباب/7.png" alt="ملابس شتوية للشباب">
+          <div class="category-content"><span>طبقات دافية وستايل عملي</span><h3>ملابس رجالي</h3><span class="text-link">تسوق المجموعة <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+        </a>
+        <a class="category-card" href="#products" data-audience-link="kids">
+          <img src="images/صور اطفال/3.png" alt="ملابس شتوية للأطفال">
+          <div class="category-content"><span>قطع مريحة ودافية للصغار</span><h3>ملابس أطفال</h3><span class="text-link">تسوق المجموعة <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section">
+        <div class="section-head">
+          <div>          <div class="eyebrow">اختيارات Kemo Store ليكوا</div><h2>قطع هتحبوها</h2></div>
+          <div class="filters" role="group" aria-label="تصفية حسب الفئة">
+            <button class="filter-btn active" data-filter="all">كل القطع</button>
+            <button class="filter-btn" data-filter="women">بناتي</button>
+            <button class="filter-btn" data-filter="men">رجالي</button>
+            <button class="filter-btn" data-filter="kids">أطفال</button>
+            <button class="filter-btn" data-filter="favorites">المفضلة</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <a class="button view-all" href="#products">شوفي كل القطع <svg viewBox="0 0 24 24"><path d="M19 12H5m7 7-7-7 7-7"/></svg></a>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image"><img src="images/صور بنات/9.png" alt="إطلالة رياضية مريحة من Kemo Store"></div>
+      <div class="story-copy">
+        <div class="eyebrow">أكتر من مجرد لبس</div>
+        <h2>حاجات بسيطة،<br>بتخليكي <em>إنتِ.</em></h2>
+        <p>Kemo Store بدأت من فكرة بسيطة: إن اللبس الحلو مش لازم يكون معقد. بنختار خامات مريحة وتصميمات تعيش معاكي، عشان كل يوم تلبسي حاجة شبهك.</p>
+        <a class="text-link" href="#products">اكتشفي اختياراتنا <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div><div class="eyebrow">خليكي قريبة من Kemo Store</div><h2>رسالة صغيرة، وإلهام كتير.</h2><p>اشتركي عشان يوصلك كل جديد وعروضنا أول بأول.</p></div>
+      <form class="subscribe-form" id="subscribeForm">
+        <input type="email" id="emailInput" placeholder="بريدك الإلكتروني" aria-label="بريدك الإلكتروني" required>
+        <button type="submit">اشتركي <span aria-hidden="true">←</span></button>
+      </form>
+      <div class="form-message" id="formMessage" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div>
+        <a class="brand footer-brand" href="#"><strong>Kemo Store</strong><small>WINTER COLLECTION</small></a>
+        <p class="footer-about">اختيارات بسيطة ومدروسة، عشان تلاقي القطعة اللي بتحسي إنها معمولة ليكي.</p>
+      </div>
+      <div class="footer-col"><h4>تسوق</h4><div class="footer-links"><a href="#collections">ملابس بناتي</a><a href="#collections">ملابس رجالي</a><a href="#collections">ملابس أطفال</a><a href="#products">الأكثر طلباً</a></div></div>
+      <div class="footer-col"><h4>مساعدتك</h4><div class="footer-links"><a href="#story">عن Kemo Store</a><a href="#story">الشحن والاستبدال</a></div></div>
+      <div class="footer-col"><h4>تواصلي معانا</h4><div class="footer-links"><a href="https://wa.me/201020012512" target="_blank" rel="noopener noreferrer">واتساب: 01020012512</a><a href="mailto:kreemmohsen998@gmail.com">kreemmohsen998@gmail.com</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Kemo Store. كل الحقوق محفوظة.</span><span>صُنع بحب، عشان كل يوم يبقى أحلى.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة التسوق" aria-hidden="true">
+    <div class="drawer-head"><h3>سلة التسوق <span id="drawerCount">(0)</span></h3><button class="close-button" id="closeCart" aria-label="إغلاق السلة">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <div class="cart-shipping"><span>الشحن</span><strong id="cartShipping">—</strong></div>
+      <div class="cart-total"><span>الإجمالي شامل الشحن</span><strong id="cartTotal">٠ ج.م</strong></div>
+      <button class="button" id="checkoutButton">إتمام الطلب</button>
+    </div>
+  </aside>
+  <div class="product-options-backdrop" id="productOptionsBackdrop" aria-hidden="true">
+    <section class="product-options-modal" role="dialog" aria-modal="true" aria-labelledby="productOptionsTitle">
+      <div class="drawer-head">
+        <h3 id="productOptionsTitle">اختيارات المنتج</h3>
+        <button class="close-button" id="closeProductOptions" aria-label="إغلاق الاختيارات">×</button>
+      </div>
+      <div class="modal-product">
+        <img id="modalProductImage" src="" alt="">
+        <div><strong id="modalProductName"></strong><span id="modalProductPrice"></span></div>
+      </div>
+      <label class="product-option-label" for="productSize">
+        المقاس المطلوب
+        <select id="productSize" required><option value="">اختار المقاس</option></select>
+      </label>
+      <label class="product-option-label" for="productColor">
+        اللون المطلوب
+        <select id="productColor" required><option value="">اختار اللون</option></select>
+      </label>
+      <details class="size-guide">
+        <summary>جدول مقاسات إرشادي</summary>
+        <p>دي قياسات الجسم الإرشادية بالسنتيمتر، مش قياسات القطعة نفسها، وممكن تختلف حسب القَصّة والخامة. لو محتار اسألنا على واتساب.</p>
+        <div class="size-guide-table" data-size-guide="women">
+          <strong>مقاسات البناتي</strong>
+          <table><thead><tr><th>المقاس</th><th>الصدر</th><th>الخصر</th></tr></thead><tbody>
+            <tr><td>XS</td><td>٧٨–٨٢</td><td>٦٠–٦٤</td></tr>
+            <tr><td>S</td><td>٨٣–٨٨</td><td>٦٥–٧٠</td></tr>
+            <tr><td>M</td><td>٨٩–٩٤</td><td>٧١–٧٦</td></tr>
+            <tr><td>L</td><td>٩٥–١٠١</td><td>٧٧–٨٣</td></tr>
+            <tr><td>XL</td><td>١٠٢–١٠٨</td><td>٨٤–٩٠</td></tr>
+          </tbody></table>
+        </div>
+        <div class="size-guide-table" data-size-guide="men">
+          <strong>مقاسات الرجالي</strong>
+          <table><thead><tr><th>المقاس</th><th>الصدر</th><th>الخصر</th></tr></thead><tbody>
+            <tr><td>S</td><td>٨٦–٩٢</td><td>٧٠–٧٦</td></tr>
+            <tr><td>M</td><td>٩٣–٩٩</td><td>٧٧–٨٣</td></tr>
+            <tr><td>L</td><td>١٠٠–١٠٦</td><td>٨٤–٩٠</td></tr>
+            <tr><td>XL</td><td>١٠٧–١١٣</td><td>٩١–٩٧</td></tr>
+            <tr><td>XXL</td><td>١١٤–١٢٠</td><td>٩٨–١٠٤</td></tr>
+          </tbody></table>
+        </div>
+        <div class="size-guide-table" data-size-guide="kids">
+          <strong>مقاسات الأطفال</strong>
+          <table><thead><tr><th>العمر</th><th>الطول التقريبي</th></tr></thead><tbody>
+            <tr><td>٢–٣ سنوات</td><td>٩٢–٩٨ سم</td></tr>
+            <tr><td>٤–٥ سنوات</td><td>١٠٤–١١٠ سم</td></tr>
+            <tr><td>٦–٧ سنوات</td><td>١١٦–١٢٢ سم</td></tr>
+            <tr><td>٨–٩ سنوات</td><td>١٢٨–١٣٤ سم</td></tr>
+            <tr><td>١٠–١٢ سنة</td><td>١٤٠–١٥٢ سم</td></tr>
+          </tbody></table>
+        </div>
+      </details>
+      <p class="option-note">اختياراتك طلب مبدئي؛ هنأكد توافر المقاس واللون على واتساب.</p>
+      <button class="button modal-add" id="confirmProductAdd">أضف للسلة</button>
+    </section>
+  </div>
+  <div class="checkout-backdrop" id="checkoutBackdrop" aria-hidden="true">
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <div class="drawer-head">
+        <h3 id="checkoutTitle">بيانات التوصيل</h3>
+        <button class="close-button" id="closeCheckout" aria-label="إغلاق بيانات التوصيل">×</button>
+      </div>
+      <p class="checkout-note">الشحن ٥٠ جنيه، والتوصيل المتوقع خلال يومين. اكتب بياناتك وهتتبعت مع الطلب على واتساب.</p>
+      <form class="delivery-form" id="deliveryForm">
+        <label class="delivery-field" for="customerName">الاسم بالكامل
+          <input id="customerName" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label class="delivery-field" for="customerPhone">رقم الموبايل
+          <input id="customerPhone" name="phone" type="tel" autocomplete="tel" required>
+        </label>
+        <label class="delivery-field delivery-field-full" for="customerGovernorate">المحافظة
+          <input id="customerGovernorate" name="governorate" type="text" autocomplete="address-level1" required>
+        </label>
+        <label class="delivery-field delivery-field-full" for="customerAddress">العنوان بالتفصيل
+          <textarea id="customerAddress" name="address" rows="3" autocomplete="street-address" required></textarea>
+        </label>
+        <label class="delivery-field delivery-field-full" for="deliveryNotes">ملاحظات التوصيل (اختياري)
+          <textarea id="deliveryNotes" name="notes" rows="2"></textarea>
+        </label>
+        <button class="button delivery-submit" type="submit">تأكيد الطلب على واتساب</button>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <a class="whatsapp-float" href="https://wa.me/201020012512" target="_blank" rel="noopener noreferrer" aria-label="تواصلي مع Kemo Store على واتساب">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.7 9.7 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.8 9.8 0 1 1 12 21Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4Z"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
